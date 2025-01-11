@@ -27,6 +27,10 @@ import {
   icon1,
   icon2,
   icon3,
+  gitHub,
+  faceBook,
+  whatsApp,
+  gmail,
 } from "../assets";
 
 export const navLinks = [
@@ -64,7 +68,15 @@ export const technologies = [
   { name: "Three JS", icon: threejs },
   { name: "git", icon: git },
 ];
-    // {/* ############# end technologies */}
+// {/* ############# end technologies */}
+// {/* ############# start contact */}
+export const contact = [
+  { name: "gitHub",navLink:'https://github.com/Amr-7246', icon: gitHub },
+  { name: "faceBook",navLink:'https://www.facebook.com/profile.php?id=100072170876178&locale=ar_AR', icon: faceBook },
+  { name: "whatsApp",navLink:'https://web.whatsapp.com/',icon: whatsApp },
+  { name: "gmail",navLink:'https://mail.google.com/mail/u/0/#inbox', icon: gmail },
+];
+    // {/* ############# end contact */}
     // {/* ############# start experiences */}
 export const experiences = [
   {
@@ -76,7 +88,7 @@ export const experiences = [
     iconBg: "#161329",
     date: "",
     points: [
-      "It`s a sleek and modern front-end interface for an AI-powered chat model, featuring smooth animations, gradient color schemes, and a user-friendly design to deliver an engaging conversational experience",
+      "It`s a front-end interface for an AI chat model with gradient color schemes",
     ],
   },
   {
@@ -103,18 +115,18 @@ export const experiences = [
       "it`s a Netflix clone for show the responseve layout",
     ],
   },
-  {
-    bgPhoto: bgPhoto,
-    title: "BrainWave",
-    link: "https://amr-7246.github.io/Brainwave/",
-    company_name: "",
-    icon: icon1,
-    iconBg: "#161329",
-    date: "",
-    points: [
-      "It`s a sleek and modern front-end interface for an AI-powered chat model, featuring smooth animations, gradient color schemes, and a user-friendly design to deliver an engaging conversational experience",
-    ],
-  },
+  // {
+  //   bgPhoto: bgPhoto,
+  //   title: "BrainWave",
+  //   link: "https://amr-7246.github.io/Brainwave/",
+  //   company_name: "",
+  //   icon: icon1,
+  //   iconBg: "#161329",
+  //   date: "",
+  //   points: [
+  //     "It`s a front-end interface for an AI-powered chat model",
+  //   ],
+  // },
 ];
     // {/* ############# end experiences */}
 export const projects = [

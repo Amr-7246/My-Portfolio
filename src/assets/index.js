@@ -36,6 +36,7 @@ import close from "./close.svg";
 
 // ################################################### customization
 
+// ********** navBar
 import Amr from "./Customize/photo_22_2025-01-07_22-36-57.jpg"
 import bgNav from "./Customize/photo_10_2025-01-07_22-36-57.jpg"
 import bgNav2 from "./Customize/photo_7_2025-01-09_01-14-24.jpg"
@@ -45,9 +46,18 @@ import navList2 from "./Customize/photo_15_2025-01-07_22-36-57.jpg"
 import bgPhoto from "./Customize/photo_5_2025-01-09_01-14-24.jpg"
 import bgPhoto2 from "./Customize/photo_1_2025-01-09_04-04-54.jpg"
 import bgPhoto3 from "./Customize/photo_1_2025-01-09_04-45-52.jpg"
+// ********** navBar
+// ********** experiens
 import icon1 from "./Customize/brainwave-symbol.svg"
 import icon2 from "./Customize/apple.svg"
 import icon3 from "./Customize/Netflix_Logo_RGB.png"
+// ********** experiens
+// ********** conact
+import gitHub from "./Customize/photo_4_2025-01-11_23-36-58.jpg"
+import faceBook from "./Customize/photo_7_2025-01-11_23-36-58.jpg"
+import whatsApp from "./Customize/photo_11_2025-01-11_23-36-58.jpg"
+import gmail from "./Customize/photo_10_2025-01-11_23-36-58.jpg"
+// ********** conact
 
 export {
   Amr,
@@ -63,6 +73,10 @@ export {
   icon2,
   icon3,
   vite,
+  gitHub,
+  faceBook,
+  whatsApp,
+  gmail,
   // *********
   mathwork,
   edunet,

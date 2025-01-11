@@ -25,7 +25,6 @@ const ExperienceCard = ({ experience }) => {
     backgroundRepeat: "no-repeat", // Optional: prevents tiling of the background
     color: "black",
     padding:'0px',
-
   }}
     contentArrowStyle={{ borderRight: "7px solid #232631" }}
     // date={experience.date}
@@ -70,7 +69,7 @@ const ExperienceCard = ({ experience }) => {
 const Experience = () => (
   <>
     {/* ############# */}
-    <motion.div variants={textVariant()}>
+    <motion.div variants={textVariant()} id="work">
       <p className={`${styles.sectionSubText} text-center`}>
         What I have done so far
       </p>

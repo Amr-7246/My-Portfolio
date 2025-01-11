@@ -31,16 +31,16 @@ const ServiceCard = ({ index, title, icon }) => (
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div variants={textVariant()} id='about'>
         <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview</h2>
+        <h2 className={`font-bold text-[50px] text-transparent bg-clip-text w-fit bg-gradient-to-r from-blue-800 via-purple-800  to-pink-800`}>Overview</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I’m  a passionate web developer with a focus on front-end technologies like HTML, CSS, JavaScript, and frameworks such as React and Vue.js . My journey in web development began with an eagerness to create interactive,
+        I’m  a passionate web developer with a focus on front-end technologies like <span className='text-green-400'>HTML, CSS, JavaScript, and frameworks such as React .</span> My journey in web development began with an eagerness to create interactive,
         user-friendly websites that deliver seamless user experiences.
         I am constantly learning and evolving, exploring the latest technologies
         and trends in the web development world. My approach is to blend creativity with functionality, designing responsive websites and web applications that look great and perform well across all devices . .  
