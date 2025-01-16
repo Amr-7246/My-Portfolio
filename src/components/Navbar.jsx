@@ -48,7 +48,7 @@ const Navbar = () => {
                 <li  className={` ${toggle ? 'opacity-1' :  'opacity-0'} duration-[600ms] delay-[300ms] flex flex-col h-full  py-[10px] items-center justify-center`}>
                   {
                     navLinks.map((link) => (
-                          <a onClick={list} key={link.id}   className=' not-last:border-b w-[90%] border-gray-400  h-[100%] flex items-center justify-center text-center hover:text-blue-600 hover: ' href={`#${link.id}`}>
+                          <a onClick={list} key={link.id}   className=' not-last:border-b w-[90%] border-gray-400 text-purple-400  h-[100%] flex items-center justify-center text-center hover:text-blue-600 hover: ' href={`#${link.id}`}>
                             {link.title}
                           </a>
                     ))
