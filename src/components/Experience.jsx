@@ -6,6 +6,7 @@ import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
+import { FiExternalLink } from "react-icons/fi";
 import photo from "../assets/Customize/photo_5_2025-01-09_01-14-24.jpg";
 
 
@@ -43,7 +44,7 @@ const ExperienceCard = ({ experience }) => {
     {/* ############# */}
     <div className="bg-black/70 flex flex-col h-[350px] justify-center"> 
       <div>
-        <h3 className="text-white text-[24px] text-center font-bold cursor-pointer hover:text-blue-600 hover:underline"  onClick={() => openWeb(experience.link)}>{experience.title}</h3>
+        <h3 className = "text-white text-[24px] text-center justify-center flex-center w-full  font-bold cursor-pointer hover:text-blue-600 flex hover:underline"  onClick={() => openWeb(experience.link)}>{experience.title}<span className=" m-2 text-center " ><FiExternalLink/></span></h3>
         <p className="text-secondary text-[16px] font-semibold" style={{ margin: 0 }}>
           {experience.company_name}
         </p>
