@@ -12,7 +12,7 @@ import photo from "../assets/Customize/photo_5_2025-01-09_01-14-24.jpg";
 const ExperienceCard = ({ experience }) => {
   const openWeb = (link) => {
     if (link) {
-      window.open(link, "_blank"); // Opens the link in a new tab
+      window.open(link, "_blank"); 
     } else {
       console.log("No link provided");
     }
@@ -21,13 +21,12 @@ const ExperienceCard = ({ experience }) => {
   <VerticalTimelineElement
   contentStyle={{
     backgroundImage: `url(${experience.bgPhoto})`,
-    backgroundSize: "cover", // Optional: ensures the image covers the element
-    backgroundRepeat: "no-repeat", // Optional: prevents tiling of the background
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
     color: "black",
     padding:'0px',
   }}
     contentArrowStyle={{ borderRight: "7px solid #232631" }}
-    // date={experience.date}
     dateClassName="absolute opacity-[0]"
     iconStyle={{ background: experience.iconBg }}
     icon={

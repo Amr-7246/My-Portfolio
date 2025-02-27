@@ -22,6 +22,8 @@ import css from "./tech/css.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
+import Typescript from "./tech/photo_1_2025-02-27_14-53-51.jpg";
+import Next from "./tech/photo_2_2025-02-27_14-53-51.jpg";
 import nodejs from "./tech/nodejs.png";
 import vite from "../assets/Customize/vite.svg";
 import reactjs from "./tech/reactjs.png";
@@ -49,6 +51,8 @@ import bgPhoto3 from "./Customize/photo_1_2025-01-09_04-45-52.jpg"
 import bgPhoto4 from "./Customize/photo_2_2025-01-14_07-33-28.jpg"
 import bgPhoto5 from "./Customize/photo_2_2025-01-16_01-55-11.jpg"
 import bgPhoto6 from "./Customize/photo_1_2025-01-16_01-55-08.jpg"
+import bgPhoto7 from "./Customize/photo_2025-02-27_13-52-02.jpg"
+import bgPhoto8 from "./Customize/photo_2025-02-27_14-15-20.jpg"
 // ********** navBar
 // ********** experiens
 import icon1 from "./Customize/brainwave-symbol.svg"
@@ -57,6 +61,8 @@ import icon3 from "./Customize/Netflix_Logo_RGB.png"
 import icon4 from "./Customize/photo_1_2025-01-14_07-33-27.jpg"
 import icon5 from "./Customize/gym.png"
 import icon6 from "./Customize/favicon.png"
+import icon7 from "./Customize/brainwave-symbol.svg"
+import icon8 from "./Customize/apple.svg"
 // ********** experiens
 // ********** conact
 import gitHub from "./Customize/photo_4_2025-01-11_23-36-58.jpg"
@@ -78,12 +84,16 @@ export {
   bgPhoto4,
   bgPhoto5,
   bgPhoto6,
+  bgPhoto7,
+  bgPhoto8,
   icon1,
   icon2,
   icon3,
   icon4,
   icon5,
   icon6,
+  icon7,
+  icon8,
   vite,
   gitHub,
   faceBook,
@@ -101,6 +111,8 @@ export {
   git,
   html,
   javascript,
+  Typescript,
+  Next,
   nodejs,
   reactjs,
   tailwind,

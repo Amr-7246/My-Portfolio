@@ -4,6 +4,8 @@ import {
   java,
   cpp,
   javascript,
+  Typescript,
+  Next,
   html,
   css,
   reactjs,
@@ -27,12 +29,16 @@ import {
   bgPhoto4,
   bgPhoto5,
   bgPhoto6,
+  bgPhoto7,
+  bgPhoto8,
   icon1,
   icon2,
   icon3,
   icon4,
   icon5,
   icon6,
+  icon7,
+  icon8,
   gitHub,
   faceBook,
   whatsApp,
@@ -57,6 +63,8 @@ export const navLinks = [
 // {/* ############# start services */}
 export const services = [
   { title: "Javascript", icon: javascript },
+  { title: "Typescript", icon: Typescript },
+  { title: "Next.JS", icon: Next },
   { title: "React", icon: reactjs },
   { title: "HTML", icon: html },
   { title: "CSS", icon: css },
@@ -67,6 +75,8 @@ export const technologies = [
   { name: "HTML 5", icon: html },
   { name: "CSS 3", icon: css },
   { name: "JavaScript", icon: javascript },
+  { name: "Typescript", icon: Typescript },
+  { name: "Next", icon: Next },
   { name: "Rect JS", icon: reactjs },
   { name: "Tailwind CSS", icon: tailwind },
   { name: "Node JS", icon: nodejs },
@@ -110,6 +120,30 @@ export const experiences = [
     ],
   },
   {
+    bgPhoto: bgPhoto7,
+    title: "Hotels App",
+    link: "https://hotels-app-218g.vercel.app/",
+    company_name: "",
+    icon: icon7,
+    iconBg: "#1d1e20",
+    date: "",
+    points: [
+      "It`s Hotel App for chick in/out and another serveses ",
+    ],
+  },
+  {
+    bgPhoto: bgPhoto8,
+    title: "Name Generation",
+    link: "https://amr-7246.github.io/Baby-Name-Generator/",
+    company_name: "",
+    icon: icon8,
+    iconBg: "#161329",
+    date: "June 2023 - July 2023",
+    points: [
+      "A simple name generation algorithm with basic options and AI integration, but inactive due to being serverless.",
+    ],
+  },
+  {
     bgPhoto: bgPhoto3,
     title: "NETFLIX",
     link: "https://amr-7246.github.io/Brainwave/",
@@ -121,6 +155,7 @@ export const experiences = [
       "it`s a Netflix clone for show the responseve layout",
     ],
   },
+  
   {
     bgPhoto: bgPhoto4,
     title: "BusinessApp",
@@ -157,6 +192,7 @@ export const experiences = [
       "It`s front-end layout for a FoodApp page ",
     ],
   },
+  
 ];
     // {/* ############# end experiences */}
 export const projects = [
