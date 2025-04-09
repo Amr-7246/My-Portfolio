@@ -31,6 +31,7 @@ import {
   bgPhoto6,
   bgPhoto7,
   bgPhoto8,
+  bgPhoto9,
   icon1,
   icon2,
   icon3,
@@ -95,6 +96,18 @@ export const contact = [
     // {/* ############# end contact */}
     // {/* ############# start experiences */}
 export const experiences = [
+  {
+    bgPhoto: bgPhoto9,
+    title: "Some Skills",
+    link: "https://raise-skills.vercel.app/",
+    company_name: "",
+    icon: icon1,
+    iconBg: "#161329",
+    date: "",
+    points: [
+      "Here are snippets of mini projects that highlight different skills."
+    ],
+  },
   {
     bgPhoto: bgPhoto,
     title: "BrainWave",
