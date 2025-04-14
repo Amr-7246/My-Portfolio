@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
+// import { ComputersCanvas } from "./canvas";
 import Typewriter from "typewriter-effect";
 
 const Hero = () => {
@@ -49,9 +49,9 @@ const Hero = () => {
           </div>
         </a>
       </div>
-      <div className="  hidden  " >
+      {/* <div className="  hidden  " >
         <ComputersCanvas />
-      </div>
+      </div> */}
     </section>
   );
 };
