@@ -53,7 +53,7 @@ import bgPhoto5 from "./Customize/photo_2_2025-01-16_01-55-11.jpg"
 import bgPhoto6 from "./Customize/photo_1_2025-01-16_01-55-08.jpg"
 import bgPhoto7 from "./Customize/photo_2025-02-27_13-52-02.jpg"
 import bgPhoto8 from "./Customize/photo_2025-02-27_14-15-20.jpg"
-import bgPhoto9 from "./Customize/photo_2025-04-04_04-53-14.jpg"
+import bgPhoto9 from "./Customize/photo_2025-04-04_04-53-14.png"
 // ********** navBar
 // ********** experiens
 import icon1 from "./Customize/brainwave-symbol.svg"
