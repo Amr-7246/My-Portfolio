@@ -109,30 +109,6 @@ export const experiences = [
     ],
   },
   {
-    bgPhoto: bgPhoto,
-    title: "BrainWave",
-    link: "https://amr-7246.github.io/Brainwave/",
-    company_name: "",
-    icon: icon1,
-    iconBg: "#161329",
-    date: "",
-    points: [
-      "It`s a front-end interface for an AI chat model with gradient color schemes",
-    ],
-  },
-  {
-    bgPhoto: bgPhoto2,
-    title: "IPhone 15 Pro",
-    link: "https://amr-7246.github.io/ApplePage/",
-    company_name: "",
-    icon: icon2,
-    iconBg: "#161329",
-    date: "May 2023 - Sep 2023",
-    points: [
-      "it`s just a simple clone for apple market page ",
-    ],
-  },
-  {
     bgPhoto: bgPhoto7,
     title: "Hotels App",
     link: "https://hotels-app-218g.vercel.app/",
@@ -141,7 +117,7 @@ export const experiences = [
     iconBg: "#1d1e20",
     date: "",
     points: [
-      "It`s Hotel App for chick in/out and another serveses ",
+      "It`s Hotel App for show some search and filter logics  ",
     ],
   },
   {
@@ -157,30 +133,42 @@ export const experiences = [
     ],
   },
   {
-    bgPhoto: bgPhoto3,
-    title: "NETFLIX",
+    bgPhoto: bgPhoto2,
+    title: "IPhone 15 Pro",
+    link: "https://amr-7246.github.io/ApplePage/",
+    company_name: "",
+    icon: icon2,
+    iconBg: "#161329",
+    date: "May 2023 - Sep 2023",
+    points: [
+      "it`s just a simple clone for apple market page without any functionlty ",
+    ],
+  },
+  {
+    bgPhoto: bgPhoto,
+    title: "BrainWave",
     link: "https://amr-7246.github.io/Brainwave/",
     company_name: "",
-    icon: icon3,
+    icon: icon1,
     iconBg: "#161329",
-    date: "June 2023 - July 2023",
-    points: [
-      "it`s a Netflix clone for show the responseve layout",
-    ],
-  },
-  
-  {
-    bgPhoto: bgPhoto4,
-    title: "BusinessApp",
-    link: "https://amr-7246.github.io/BusinessApp/",
-    company_name: "",
-    icon: icon4,
-    iconBg: "#1d1e20",
     date: "",
     points: [
-      "It`s just front-end layout for a business page ",
+      "It`s a simple front-end interface to just show a gradient color schemes without any functionlty ",
     ],
   },
+  // {
+  //   bgPhoto: bgPhoto3,
+  //   title: "NETFLIX",
+  //   link: "https://amr-7246.github.io/Brainwave/",
+  //   company_name: "",
+  //   icon: icon3,
+  //   iconBg: "#161329",
+  //   date: "June 2023 - July 2023",
+  //   points: [
+  //     "it`s a Netflix clone for show the responseve layout",
+  //   ],
+  // },
+  
   {
     bgPhoto: bgPhoto5,
     title: "FitnessApp",
@@ -194,6 +182,18 @@ export const experiences = [
     ],
   },
   {
+    bgPhoto: bgPhoto4,
+    title: "BusinessApp",
+    link: "https://amr-7246.github.io/BusinessApp/",
+    company_name: "",
+    icon: icon4,
+    iconBg: "#1d1e20",
+    date: "",
+    points: [
+      "It`s just front-end layout for a business page without any functionlty  ",
+    ],
+  },
+  {
     bgPhoto: bgPhoto6,
     title: "FoodApp",
     link: "https://amr-7246.github.io/FoodApp/",
@@ -202,7 +202,7 @@ export const experiences = [
     iconBg: "#1d1e20",
     date: "",
     points: [
-      "It`s front-end layout for a FoodApp page ",
+      "It`s front-end layout for a FoodApp page without any functionlty  ",
     ],
   },
   
