@@ -32,6 +32,7 @@ import {
   bgPhoto7,
   bgPhoto8,
   bgPhoto9,
+  bgPhoto10,
   icon1,
   icon2,
   icon3,
@@ -40,6 +41,7 @@ import {
   icon6,
   icon7,
   icon8,
+  icon9,
   gitHub,
   faceBook,
   whatsApp,
@@ -96,6 +98,18 @@ export const contact = [
     // {/* ############# end contact */}
     // {/* ############# start experiences */}
 export const experiences = [
+  {
+    bgPhoto: bgPhoto10,
+    title: "Full Stack E-Commerce",
+    link: "https://e-commerce-nu-six-55.vercel.app/",
+    company_name: "",
+    icon: icon9,
+    iconBg: "black",
+    date: "",
+    points: [
+      "It`s Full-stack project showcasing front-end and back-end integration with API handling. "
+    ],
+  },
   {
     bgPhoto: bgPhoto9,
     title: "Some Skills",

@@ -39,7 +39,7 @@ import close from "./close.svg";
 // ################################################### customization
 
 // ********** navBar
-import Amr from "./Customize/photo_22_2025-01-07_22-36-57.jpg"
+import Amr from "./Customize/photo_3_2025-03-18_03-04-48.jpg"
 import bgNav from "./Customize/photo_10_2025-01-07_22-36-57.jpg"
 import bgNav2 from "./Customize/photo_7_2025-01-09_01-14-24.jpg"
 import bgNav3 from "./Customize/photo_6_2025-01-09_01-14-24.jpg"
@@ -54,6 +54,7 @@ import bgPhoto6 from "./Customize/photo_1_2025-01-16_01-55-08.jpg"
 import bgPhoto7 from "./Customize/photo_2025-02-27_13-52-02.jpg"
 import bgPhoto8 from "./Customize/photo_2025-02-27_14-15-20.jpg"
 import bgPhoto9 from "./Customize/photo_2025-04-04_04-53-14.png"
+import bgPhoto10 from "./Customize/photo_2_2025-05-01_06-41-12.jpg"
 // ********** navBar
 // ********** experiens
 import icon1 from "./Customize/brainwave-symbol.svg"
@@ -64,6 +65,7 @@ import icon5 from "./Customize/gym.png"
 import icon6 from "./Customize/favicon.png"
 import icon7 from "./Customize/brainwave-symbol.svg"
 import icon8 from "./Customize/apple.svg"
+import icon9 from "./Customize/photo_2_2025-04-28_02-57-24.jpg"
 // ********** experiens
 // ********** conact
 import gitHub from "./Customize/photo_4_2025-01-11_23-36-58.jpg"
@@ -88,6 +90,7 @@ export {
   bgPhoto7,
   bgPhoto8,
   bgPhoto9,
+  bgPhoto10,
   icon1,
   icon2,
   icon3,
@@ -96,6 +99,7 @@ export {
   icon6,
   icon7,
   icon8,
+  icon9,
   vite,
   gitHub,
   faceBook,
