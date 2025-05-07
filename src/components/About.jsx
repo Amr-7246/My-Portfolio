@@ -28,7 +28,7 @@ import { fadeIn, textVariant } from '../utils/motion';
 // ~ ########### Start About Section
   const About = () => {
     const [WhoAreThere, setWhoAreThere] = useState('')
-    const btn = 'bg-purple-600/10 w-full text-indigo-700 font-black duration-700 p-3 cursor-pointer hover:bg-transparent hover:border-indigo-700 border border-transparent rounded-lg'
+    const btn = 'bg-purple-600/20 w-full text-indigo-700 font-black duration-700 p-3 cursor-pointer hover:bg-transparent hover:border-indigo-700 border border-transparent rounded-lg'
     return (
       <>
         <motion.div variants={textVariant()} className=' mb-10 flex flex-col gap-10 ' id='about'>
@@ -55,16 +55,16 @@ import { fadeIn, textVariant } from '../utils/motion';
               <div>
                 <motion.p variants={fadeIn('', '', 0.1, 1)} className="mt-4 font-bold text-secondary text-[17px] max-w-3xl leading-[30px]" >
                   <p className="text-stone-400 mb-5">
-                    - I’m a passionate web developer with a strong focus on modern front-end technologies like 
+                    I’m a passionate web developer with a strong focus on modern front-end technologies like 
                     <span className="text-indigo-600"> JS/TS, HTML, CSS (Tailwind), and frameworks like Next.js</span>. 
                     and of course I’ve leveled up my UI game with animation tools like GSAP and Framer Motion to bring interfaces to life.
                   </p>
                   <p className="text-stone-400 mb-5">
-                    - While I specialize in modern stacks, I’m flexible and always ready to learn any tech that gets the job done . . . 
+                    While I specialize in modern stacks, I’m flexible and always ready to learn any tech that gets the job done . . . 
                     If I don’t know it today, best believe I’ll learn it tomorrow — through deep research, non-stop practice, and staying ahead of the curve.
                   </p>
                   <p className="text-stone-400 mb-5">
-                        - But I'm not just limited to the front-end side of the big picture, I have a global understanding of the entire apps production lifecycle. 
+                        But I'm not just limited to the front-end side of the big picture, I have a global understanding of the entire apps production lifecycle. 
                         And with hands-on experience in <span className="text-indigo-600">Node.js, back-end frameworks like Express and Django, databases like MySQL and MongoDB, plus Python programming, 
                         Vercel for front-end deployment, and AWS for back-end and DB hosting </span> This full-stack exposure leveled up my ability to see the big picture clearly.
                         which leveled up my ability to see the big picture clearly. That said, I’ve chosen to focus on front-end as the core of my journey.
@@ -78,18 +78,18 @@ import { fadeIn, textVariant } from '../utils/motion';
               <div>
                 <motion.p variants={fadeIn('', '', 0.1, 1)} className="mt-4 font-bold text-secondary text-[17px] max-w-3xl leading-[30px]" >
                   <p className="text-stone-400 mb-5">
-                    - You're looking for someone who’s not just skilled, but **fully invested** in building your vision — I get that. That’s why I bring more than just clean code to the table: 
+                    You're looking for someone who’s not just skilled, but **fully invested** in building your vision — I get that. That’s why I bring more than just clean code to the table: 
                     I bring <span className="text-indigo-600">consistency, communication, and real project ownership</span>.
                   </p>
                   <p className="text-stone-400 mb-5">
-                    - I specialize in modern stacks — <span className="text-indigo-600">Next.js, Tailwind CSS, TypeScript, Framer Motion, and Firebase</span> — and I’ve worked on everything from elegant UIs to scalable back-end logic. I know what it takes to ship products that look great *and* work under pressure.
+                    I specialize in modern stacks — <span className="text-indigo-600">Next.js, Tailwind CSS, TypeScript, Framer Motion, and Firebase</span> — and I’ve worked on everything from elegant UIs to scalable back-end logic. I know what it takes to ship products that look great *and* work under pressure.
                   </p>
                   <p className="text-stone-400 mb-5">
-                    - I understand business needs. That means meeting deadlines, writing maintainable code, collaborating with teams, and adapting fast when plans shift.
+                    I understand business needs. That means meeting deadlines, writing maintainable code, collaborating with teams, and adapting fast when plans shift.
                     If there's a feature you need or a problem to solve, I’m not the “wait for instructions” type — I’ll think it through, offer options, and deliver solutions.
                   </p>
                   <p className="text-stone-400 mb-5">
-                    - With experience in <span className="text-indigo-600">Firebase, MongoDB, Express, Python, and AWS</span> for deployment and logic, I can handle both the front and back — but I’ve chosen to go all in on **front-end excellence** because that’s where your users feel the magic. Let’s make your interface unforgettable
+                    With experience in <span className="text-indigo-600">Firebase, MongoDB, Express, Python, and AWS</span> for deployment and logic, I can handle both the front and back — but I’ve chosen to go all in on **front-end excellence** because that’s where your users feel the magic. Let’s make your interface unforgettable
                   </p>
                   <p className="text-teal-500 font-bold">
                     I’m not here to test ideas — I’m here to help you build them.
@@ -98,7 +98,7 @@ import { fadeIn, textVariant } from '../utils/motion';
               </div> 
               :
               <div>
-                <motion.p variants={fadeIn('', '', 0.1, 1)} className="md:my-[50px] lg:my-[100px] my-[20px] mx-auto w-fit font-bold text-teal-300/50 text-[17px] max-w-3xl leading-[30px]" >
+                <motion.p variants={fadeIn('', '', 0.1, 1)} className="md:my-[50px] lg:my-[100px] my-[20px] text-center mx-auto w-fit font-bold text-teal-300/50 text-[17px] max-w-3xl leading-[30px]" >
                     You can Select What you are looking For
                 </motion.p>
               </div> 

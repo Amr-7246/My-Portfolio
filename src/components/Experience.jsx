@@ -41,11 +41,11 @@ import { FiExternalLink } from "react-icons/fi";
         }
       >
         {/* ############# Card Content */}
-          <div className="  flex flex-col h-[350px] justify-between text-stone-400 ">
+          <div className="  flex flex-col md:h-[350px] h-[290px] justify-between text-stone-400 ">
             { experience.IsCollection ? 
               <div className=" justify-center flex flex-wrap mt-[10%] gap-2 ">
                 {experience.CollectionDeets.map((item , index) => (
-                  <h3 key={index} className = " text-[15px] bg-indigo-800/20 backdrop-blur-md p-1 rounded-lg items-center text-center justify-center flex-center w-[150px]  font-bold cursor-pointer hover:text-blue-600 flex hover:underline" 
+                  <h3 key={index} className = " md:text-[15px] text-[12px] bg-indigo-800/20 backdrop-blur-md p-1 rounded-lg items-center text-center justify-center flex-center md:w-[150px] w-[120px] font-bold cursor-pointer hover:text-blue-600 flex hover:underline" 
                       onClick={() => openWeb(item.link)}
                       >
                         {item.title}<span className=" m-2 text-center " ><FiExternalLink/></span>
@@ -54,7 +54,7 @@ import { FiExternalLink } from "react-icons/fi";
               </div>
               :
               <div className="justify-center flex flex-wrap mt-[20%] gap-2 ">
-                <h3 className = "bg-black/50 py-2 px-5 rounded-lg items-center w-fit backdrop-blur-md text-[20px] text-center justify-center flex-center  font-bold cursor-pointer hover:text-blue-600 flex hover:underline" 
+                <h3 className = "bg-stone-800/20 border-[1px] border-stone-600 py-2 px-5 rounded-lg items-center w-fit backdrop-blur-lg md:text-[19px] text-[15px] text-center justify-center flex-center  font-bold cursor-pointer hover:text-blue-600 flex hover:underline" 
                     onClick={() => openWeb(experience.link)}
                     >
                       {experience.title}<span className=" m-2 text-center " ><FiExternalLink/></span>
@@ -89,7 +89,7 @@ const Experience = () => (
     </motion.div>
     {/* ############# */}
     {/* ############# */}
-    <div className="mt-20 flex flex-col ">
+    <div className="mt-20 max-w-[500px] lg:max-w-[2000px] mx-auto flex flex-col ">
       <VerticalTimeline>
         {experiences.map((experience, index) => (
           <ExperienceCard  key={`experience-${index}`} experience={experience} />

@@ -56,7 +56,7 @@ const Hero = () => {
         </div>
       {/* Animated Button for about */}
       {/* Animated Element */}
-      <div className="absolute  xs:bottom-[20%] rounded-xl lg:left-[60%] md:left-[50%] left-[30%] bottom-[50%] w-fit flex justify-center items-center">
+      <div className="absolute xs:bottom-[20%] rounded-xl lg:left-[60%] md:left-[55%] left-[20%] md:bottom-[40%] bottom-[30%] w-fit flex justify-center items-center">
         <DotLottieReact
           src="/Animation/Animation - 1746586967737.lottie"
           loop
