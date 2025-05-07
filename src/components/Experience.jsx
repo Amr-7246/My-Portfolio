@@ -45,7 +45,7 @@ import { FiExternalLink } from "react-icons/fi";
             { experience.IsCollection ? 
               <div className=" justify-center flex flex-wrap mt-[10%] gap-2 ">
                 {experience.CollectionDeets.map((item , index) => (
-                  <h3 key={index} className = " md:text-[15px] text-[12px] bg-indigo-800/20 backdrop-blur-md p-1 rounded-lg items-center text-center justify-center flex-center md:w-[150px] w-[120px] font-bold cursor-pointer hover:text-blue-600 flex hover:underline" 
+                  <h3 key={index} className = " md:text-[15px] text-[10px] bg-indigo-800/20 backdrop-blur-md p-1 rounded-lg items-center text-center justify-center flex-center md:w-[150px] w-[100px] font-bold cursor-pointer hover:text-blue-600 flex hover:underline" 
                       onClick={() => openWeb(item.link)}
                       >
                         {item.title}<span className=" m-2 text-center " ><FiExternalLink/></span>
