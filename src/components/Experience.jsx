@@ -7,65 +7,77 @@ import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 import { FiExternalLink } from "react-icons/fi";
-import photo from "../assets/Customize/photo_5_2025-01-09_01-14-24.jpg";
 
+// ~ ########### Start Experience Card
+  const ExperienceCard = ({ experience }) => {
+    const openWeb = (link) => {
+      if (link) {
+        window.open(link, "_blank"); 
+      } else {
+        console.log("No link provided");
+      }
+    };
+    return (
+    <VerticalTimelineElement
+      contentStyle={{
+        backgroundImage: `url(${experience.bgPhoto})`,
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        color: "black",
+        padding:'0px',
+      }}
+        contentArrowStyle={{ borderRight: "7px solid #232631" }}
+        dateClassName="absolute opacity-[0]"
+        iconStyle={{ background: experience.iconBg }}
+        icon={
+          <div className="flex justify-center items-center w-full h-full">
+            <img
+              src={experience.icon}
+              alt={experience.company_name}
+              onClick={() => openWeb(experience.link)}
+              className="w-[60%] h-[60%] object-contain cursor-pointer  hover:scale-[1.2] transition-transform duration-300 hover:rotate-[20deg]"
+            />
+          </div>
+        }
+      >
+        {/* ############# Card Content */}
+          <div className="  flex flex-col h-[350px] justify-between text-stone-400 ">
+            { experience.IsCollection ? 
+              <div className=" justify-center flex flex-wrap mt-[10%] gap-2 ">
+                {experience.CollectionDeets.map((item , index) => (
+                  <h3 key={index} className = " text-[15px] bg-indigo-800/20 backdrop-blur-md p-1 rounded-lg items-center text-center justify-center flex-center w-[150px]  font-bold cursor-pointer hover:text-blue-600 flex hover:underline" 
+                      onClick={() => openWeb(item.link)}
+                      >
+                        {item.title}<span className=" m-2 text-center " ><FiExternalLink/></span>
+                  </h3>
+                ))}
+              </div>
+              :
+              <div className="justify-center flex flex-wrap mt-[20%] gap-2 ">
+                <h3 className = "bg-black/50 py-2 px-5 rounded-lg items-center w-fit backdrop-blur-md text-[20px] text-center justify-center flex-center  font-bold cursor-pointer hover:text-blue-600 flex hover:underline" 
+                    onClick={() => openWeb(experience.link)}
+                    >
+                      {experience.title}<span className=" m-2 text-center " ><FiExternalLink/></span>
+                </h3>
+              </div>
 
-const ExperienceCard = ({ experience }) => {
-  const openWeb = (link) => {
-    if (link) {
-      window.open(link, "_blank"); 
-    } else {
-      console.log("No link provided");
-    }
+            }
+            <dev className=" rounded-t-sm pb-2 px-3 list-disc mx-auto w-full h-fit backdrop-blur-md bg-black/50 space-y-2">
+              {experience.points.map((point, index) => (
+                <p
+                  key={`experience-point-${index}`}
+                  className=" !font-black text-[14px] text-center tracking-wider  "
+                >
+                  {point}
+                </p>
+              ))}
+            </dev>
+          </div>
+        {/* ############# Card Content */}
+    </VerticalTimelineElement>
+    )
   };
-  return (
-  <VerticalTimelineElement
-  contentStyle={{
-    backgroundImage: `url(${experience.bgPhoto})`,
-    backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
-    color: "black",
-    padding:'0px',
-  }}
-    contentArrowStyle={{ borderRight: "7px solid #232631" }}
-    dateClassName="absolute opacity-[0]"
-    iconStyle={{ background: experience.iconBg }}
-    icon={
-      <div className="flex justify-center items-center w-full h-full">
-        <img
-          src={experience.icon}
-          alt={experience.company_name}
-          onClick={() => openWeb(experience.link)}
-          className="w-[60%] h-[60%] object-contain cursor-pointer  hover:scale-[1.2] transition-transform duration-300 hover:rotate-[20deg]"
-        />
-      </div>
-    }
-  >
-    {/* ############# */}
-    <div className="bg-black/70 flex flex-col h-[350px] justify-center"> 
-      <div>
-        <h3 className = "text-white text-[24px] text-center justify-center flex-center w-full  font-bold cursor-pointer hover:text-blue-600 flex hover:underline"  onClick={() => openWeb(experience.link)}>{experience.title}<span className=" m-2 text-center " ><FiExternalLink/></span></h3>
-        <p className="text-secondary text-[16px] font-semibold" style={{ margin: 0 }}>
-          {experience.company_name}
-        </p>
-      </div>
-      {/* ############# */}
-      <dev className="  mt-5 list-disc ml-5 space-y-2">
-        {experience.points.map((point, index) => (
-          <p
-            key={`experience-point-${index}`}
-            className="text-white-100 text-[14px] pl-1 text-center tracking-wider  h-[100px] mb-[500px] "
-          >
-            {point}
-          </p>
-        ))}
-      </dev>
-    </div>
-    {/* ############# */}
-  </VerticalTimelineElement>
-  )
-};
-
+// ~ ########### End Experience Card
 const Experience = () => (
   <>
     {/* ############# */}

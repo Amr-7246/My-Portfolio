@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState , useEffect } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { styles } from "../styles";
@@ -6,22 +6,78 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { contact } from '../constants';
 import { slideIn } from "../utils/motion";
+import { FiCopy, FiCheck } from "react-icons/fi";
 import "../index.css";
 
 const Contact = () => {
-// ################# start logic
-const nav = (navLink) => {
-  window.open(navLink,'_blank')
+  const [WhichContactM, setWhichContactM] = useState('')
+  const [ItemNumber, setItemNumber] = useState('');
+  // const [copied, setCopied] = useState(false);
+
+  // const handleCopy = (item) => {
+  //   setItemNumber(item.Number)
+  //   console.log(ItemNumber)
+  // };
+  // useEffect( async () => {
+  //   try {
+  //     await navigator.clipboard.writeText(ItemNumber);
+  //     setCopied(true);
+  //     setTimeout(() => setCopied(false), 2000); 
+  //   } catch (err) {
+  //     console.error("Failed to copy:", err);
+  //   }
+  //   console.log(copied)
+  //   console.log(ItemNumber)
+  // }, [ItemNumber])
+
+  const HandelContact = (navLink) => {
+    if (navLink == 'Phone') {
+      if( WhichContactM == 'Phone'){
+        setWhichContactM('')
+      }else{
+        setWhichContactM('Phone')
+      }
+    } else if (navLink == 'Mail') {
+      if( WhichContactM == 'Mail'){
+        setWhichContactM('')
+      }else{
+        setWhichContactM('Mail')
+      }
+    } else {
+      window.open(navLink,'_blank')
+      setWhichContactM('')
+    }
 } 
-// ################# end logic
   return (
     <div className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`} id="contact">
       <motion.div variants={slideIn("left", "tween", 0.2, 1)} className="flex-[0.75] items-center flex flex-col p-8 rounded-2xl">
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact Me</h3>
-        <div className="flex my-[30px]">
-          {contact.map((icon) => (
-            <img onClick={() => nav(icon.navLink)} className="w-[50px] h-[50px] rounded-full mx-2 boxShadow animate-up-down cursor-pointer " src={icon.icon} alt={icon.name} />
+        <div className="flex  flex-wrap my-[30px]">
+          {contact.map((item) => (
+            <div className="relative">
+              <img onClick={() => HandelContact(item.navLink)} className="w-[50px] h-[50px] rounded-full mx-2 boxShadow animate-up-down cursor-pointer " src={item.icon} alt={item.name} />
+              <div className={`${WhichContactM == item.navLink ? 'flex' : 'hidden'} duration-700 bg-stone-400/10 right-[-150%] backdrop-blur-md p-3 rounded-lg  font-black absolute `}>
+                { WhichContactM && 
+                  WhichContactM == 'Phone' ? 
+                  <div className="flex gap-3 items-center justify-center">
+                    <p className="text-[15px] text-center text-green-500">{item.Number}</p> 
+                    {/* <button onClick={handleCopy(item)} className="text-green-500 hover:text-green-600 transition">
+                      {copied ? <FiCheck className="text-xl" /> : <FiCopy className="text-xl" />}
+                    </button> */}
+                  </div>
+                  : 
+                  WhichContactM == 'Mail'  ? 
+                  <div className="flex gap-3 items-center justify-center">
+                    <p className="text-[15px] text-center  text-red-500">{item.Number}</p> 
+                    {/* <button onClick={() => {handleCopy(item) }} className="text-green-500 hover:text-green-600 transition">
+                      {copied ? <FiCheck className="text-xl" /> : <FiCopy className="text-xl" />}
+                    </button> */}
+                  </div>
+                  : ''
+                }
+              </div>
+            </div>
           ))}
         </div>
       </motion.div>
@@ -33,142 +89,3 @@ const nav = (navLink) => {
   )
 }
 export default Contact;
-
-// // $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-//   <label className="flex flex-col">
-//     <span className="text-white font-medium mb-4">{label}</span>
-//     <input
-//       type={type}
-//       name={name}
-//       value={value}
-//       onChange={onChange}
-//       placeholder={placeholder}
-//       className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
-//       />
-//   </label>
-// );
-// // $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-
-// const Contact = () => {
-//   // ################# start usestate
-//   const formRef = useRef();
-//   const [form, setForm] = useState({
-//     name: "",
-//     email: "",
-//     message: "",
-//   });
-//   const [loading, setLoading] = useState(false);
-//   const [emailError, setEmailError] = useState("");
-//   const [nameError, setNameError] = useState("");
-//   const [confirmation, setConfirmation] = useState("");
-//   // ################# end usestate
-//   // ################# start logic
-//   // ***********
-//   const handleChange = (e) => {
-//     const { name, value } = e.target;
-//     setForm({
-//       ...form,
-//       [name]: value,
-//     });
-//   };
-//   // ***********
-
-//   const validateEmail = (email) => {
-//     const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-//     return regex.test(email);
-//   };
-//   // ***********
-
-//   const handleSubmit = (e) => {
-//     e.preventDefault();
-//     setEmailError("");
-//     setNameError("");
-//     setConfirmation("");
-
-//     if (!validateEmail(form.email)) {
-//       setEmailError("Please enter a valid email address.");
-//       return;
-//     }
-
-//     if (!form.name.trim()) {
-//       setNameError("Name is required.");
-//       return;
-//     }
-
-//     setLoading(true);
-
-//     // @@@@@@@@@@@@@@ start sending
-//     emailjs
-//       .send(
-//         "service_r2i0by4",
-//         "template_mf5x3bh",
-//         {
-//           from_name: form.name,
-//           to_name: "Lohit Kolluri",
-//           from_email: form.email,
-//           to_email: "lohitkolluri@gmail.com",
-//           message: form.message,
-//         },
-//         "p-gXzzyvEhPaJ0XA-"
-//       )
-//       .then(
-//         () => {
-//           setLoading(false);
-//           setConfirmation("Thank you! I will get back to you as soon as possible.");
-
-//           setForm({
-//             name: "",
-//             email: "",
-//             message: "",
-//           });
-//         }
-//       )
-//       .catch((error) => {
-//         setLoading(false);
-//         console.error(error);
-//         setConfirmation("Something went wrong. Please try again. :/");
-//       });
-//     // @@@@@@@@@@@@@@ end sending
-//   // ***********
-
-        // {/* <p className={styles.sectionSubText}>Get in touch</p>
-        // <h3 className={styles.sectionHeadText}>Contact Me</h3>
-        // <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col gap-8">
-        // {/* ************************** */}
-        //   <InputField
-        //     label="Your Name"
-        //     name="name"
-        //     value={form.name}
-        //     onChange={handleChange}
-        //     placeholder="Insert Your name here..."
-        //     type="text"
-        //   />
-        //   {nameError && <span className="text-red-500">{nameError}</span>}
-        // {/* ************************** */}
-        //   <InputField
-        //     label="Email Address"
-        //     name="email"
-        //     value={form.email}
-        //     onChange={handleChange}        
-        //     placeholder="What's your email address?"
-        //     type="email"
-        //   />
-        //   {emailError && <span className="text-red-500">{emailError}</span>}
-        // {/* ************************** */}
-        //   <InputField
-        //     label="Your Message"
-        //     name="message"
-        //     value={form.message}
-        //     onChange={handleChange}
-        //     placeholder="What you want to say...?"
-        //     type="text"
-        //   />
-
-        //   <button
-        //     type="submit"
-        //     className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
-        //   >
-        //     {loading ? "Sending..." : "Send"}
-        //   </button>
-        //   {confirmation && <p className="text-green-500">{confirmation}</p>}
-        // </form> */}
