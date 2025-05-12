@@ -1,17 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="icon" type="image/x-icon" href="./src/assets/Customize/photo_7_2025-01-07_22-36-57.jpg" alt="man-technologyst"> -->
-  <link rel="icon" type="image/x-icon" href="https://img.icons8.com/emoji/48/man-technologyst.png" alt="man-technologyst">
-  <title>Amr's Portfolio</title>
-</head>
-<body>
-  <noscript>
-    <p>This website requires JavaScript to function properly.</p>
-  </noscript>
-  <div id="root"></div>
-  <script type="module" src="/src/main.jsx" defer></script>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="icon" type="image/x-icon" href="./src/assets/Customize/photo_7_2025-01-07_22-36-57.jpg" alt="man-technologyst"> -->
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/emoji/48/man-technologyst.png" alt="man-technologyst">
+    <title>Amr's Portfolio</title>
+  </head>
+
+  <body>
+    <noscript>
+      <p>This website requires JavaScript to function properly.</p>
+    </noscript>
+
+    <!-- ~ Your Lottie Pre-Build Loader -->
+      <div id="preloader" style="background-color: hsl(225, 100%, 4%); position: fixed; z-index: 9999; top: 0; left: 0; width: 100vw; height: 100vh; display: flex; justify-content: center; align-items: center;">
+        <dotlottie-player
+          src="/Animation/Animation - 1747062094036.lottie"
+          background="transparent"
+          speed="1"
+          style="width: 300px; height: 300px;"
+          autoplay
+        ></dotlottie-player>
+      </div>
+
+    <!-- ~ React App Root -->
+    <div id="root"></div>
+
+    <!-- ~ Load Lottie player -->
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.js"></script>
+
+  <!-- ~ Load Vite App -->
+    <script type="module" src="/src/main.jsx" defer></script>
+  </body>
 </html>
