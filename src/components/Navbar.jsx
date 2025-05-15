@@ -3,15 +3,19 @@ import {Amr} from '../assets';
 
 const navLinks = [
   {
+    id: "/",
+    title: "Home",
+  },
+  {
     id: "#about",
     title: "About",
   },
   {
-    id: "#work",
-    title: "Work",
+    id: "/experines",
+    title: "Experines",
   },
   {
-    id: "#contact",
+    id: "/contact",
     title: "Contact",
   },
   {
@@ -28,7 +32,7 @@ const Navbar = () => {
   return (
     <>
       {/* ########################## */}
-      <nav style={{ backgroundColor: 'rgb(144 89 255 / 15%)'}} className={` w-[90%] mx-auto max-w-[1170px] relative rounded-[20px] md:top-[50px] top-[30px] z-20 `}>
+      <nav style={{ backgroundColor: 'rgb(144 89 255 / 15%)'}} className={` w-[90%] mx-auto max-w-[1170px] rounded-[20px] top-[30px] fixed translate-x-[-50%] left-[50%] backdrop-blur-lg z-20 `}>
         <div className='flex items-center justify-between w-full px-4 py-2 '>
           <div className='flex items-center'>
           {/* ********* */}
@@ -54,13 +58,13 @@ const Navbar = () => {
           </div>
         </div>
       {/* ########################## */}
-        <div style= {{transition: 'all 1000ms cubic-bezier(0.6, -0.16, 0.44, 1.25)'}} className={` ${toggle ? 'w-[90%] h-[250px] left-1/2 top-[120%] md:w-[300px] md:h-[350px] md:left-[78%] lg:left-[80%] transform -translate-x-1/2' :  'w-[0px] h-[0px] z-10 left-[90%] top-[70%]  md:left-[95%] md:top-[50%] rounded-[100%]'}  duration-[1000ms] bg-cover bg-center overflow-hidden mx-auto z-10 rounded-[20px] absolute `}   > 
-          <div className={`bg-black/70 h-[100%] w-full  flex-col justify-center py-6`}>
+        <div style= {{transition: 'all 1000ms cubic-bezier(0.6, -0.16, 0.44, 1.25)'}} className={` ${toggle ? 'w-[90%] h-[250px] left-1/2 top-[120%] md:w-[300px] md:h-[350px] md:left-[78%] lg:left-[80%] transform -translate-x-1/2' :  'w-[0px] h-[0px] z-10 left-[90%] top-[70%]  md:left-[95%] md:top-[50%] rounded-[100%]'}  duration-[700ms] overflow-hidden mx-auto z-10 rounded-[20px] absolute `}   > 
+          <div className={`bg-black/70 h-[100%] w-full !backdrop-blur-3xl flex-col justify-center py-6`}>
             <ul  className='flex flex-col w-full md:py-[60px] h-full'>
-                <li  className={` ${toggle ? 'opacity-1' :  'opacity-0'} duration-[600ms] delay-[300ms] flex flex-col h-full  py-[10px] items-center justify-center`}>
+                <li  className={` ${toggle ? 'opacity-1' :  'opacity-0'} duration-[600ms] delay-[300ms] flex flex-col h-full  py-[2px] items-center justify-center`}>
                   {
                     navLinks.map((link) => (
-                          <a onClick={list} key={link.id}   className=' not-last:border-b w-[90%] border-gray-400 text-purple-400  h-[100%] flex items-center justify-center text-center hover:text-blue-600 hover: ' href={`${link.id}`}>
+                          <a onClick={list} key={link.id}   className=' not-last:border-b w-[90%] border-purple-400 text-purple-400  h-[100%] flex items-center justify-center text-center hover:text-blue-600 hover: ' href={`${link.id}`}>
                             {link.title}
                           </a>
                     ))
