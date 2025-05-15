@@ -16,7 +16,7 @@ const Hero = () => {
             <div className="w-1 sm:h-80 h-40 violet-gradient" />
           </div>
 
-          <div>
+          <div className="">
             <h1 className={`${styles.heroHeadText} text-white`}>
               Hi, I'm <span className="text-[#915EFF]">Amr</span>
             </h1>
@@ -33,6 +33,17 @@ const Hero = () => {
                 }}
               />
             </p>
+            {/* Animated Active Element */}
+              <div className=" px-3 mt-1 text-purple-500 gap-3 font-black w-fit flex justify-center items-center">
+                Open<span className="hidden ml-[-9px] md:flex ">to work</span>
+                <DotLottieReact
+                  src="/Animation/Animation - 1747322867917.lottie"
+                  loop
+                  autoplay
+                  style={{ width: "50px", height: "50px" }}
+                />
+              </div>
+            {/* Animated Active Element */}
           </div>
         </div>
       {/* Top Section */}
