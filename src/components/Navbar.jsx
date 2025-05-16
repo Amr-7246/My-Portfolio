@@ -54,7 +54,7 @@ const Navbar = () => {
               alt="my imge"
               onClick={() => setShowImgCard(true)}
             />
-            <a className='cursor-pointer' href='#about'>Amr</a>
+            <a className='cursor-pointer hidden md:flex ' href='#about'>Amr</a>
           </div>
           {/* ************************************************ right part */}
           <div className='group flex items-center justify-center gap-5 flex-row-reverse '>
