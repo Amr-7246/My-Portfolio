@@ -81,12 +81,12 @@ import { FiExternalLink } from "react-icons/fi";
 const Experience = () => (
   <>
     {/* ############# */}
-    <motion.div variants={textVariant()} id="work">
+    <div id="work">
       <p className={`${styles.sectionSubText} text-center`}>
         What I have done so far . . . <span className="text-indigo-300 font-bold"> You can Visit any one of them</span>
       </p>
-      <h2 className={`${styles.sectionHeadText} text-center`}>Work Experience</h2>
-    </motion.div>
+      <h2 className={`${styles.sectionHeadText} w-fit mx-auto !text-transparent !bg-clip-text !bg-gradient-to-r from-blue-800 via-purple-800  to-pink-800 text-center`}>Work Experience</h2>
+    </div>
     {/* ############# */}
     {/* ############# */}
     <div className="mt-20 max-w-[500px] lg:max-w-[2000px] mx-auto flex flex-col ">
