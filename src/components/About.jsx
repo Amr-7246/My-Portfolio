@@ -54,7 +54,7 @@ const About = () => {
             {aboutData.map((item, idx) => (
               <div key={idx}>
                 <div className={`flex items-center justify-between px-6 py-4 cursor-pointer transition-all duration-300 select-none ${openTab === idx ? 'bg-gradient-to-r from-purple-900/30 to-indigo-900/20 text-purple-400 shadow-inner scale-[1.01]' : 'hover:bg-purple-900/10 text-stone-400'} font-bold text-lg`} onClick={() => handleTabClick(idx)} >
-                  <span>{item.title}</span>
+                  <span className=' tracking-widest font-rubikPuddles text-transparent bg-gradient-to-r from-sky-400 via-indigo-500 to-purple-500 bg-clip-text '>{item.title}</span>
                   <span className="ml-2 text-xl transition-transform duration-300">
                     {openTab === idx ? <FaChevronUp /> : <FaChevronDown />}
                   </span>
@@ -66,10 +66,10 @@ const About = () => {
                   style={{ overflow: 'hidden' }}
                 >
                   {openTab === idx && (
-                    <div className="px-8 py-6">
-                      <p className="text-stone-400 mb-3">{item.UperContent}</p>
-                      <p className="text-indigo-600 font-bold mb-3">{item.HighlitedContent}</p>
-                      <p className="text-stone-400">{item.DownContent}</p>
+                    <div className="px-8 py-6 ">
+                      <p className=" font-rubikDistressed text-transparent bg-gradient-to-r from-white via-sky-400 to-white bg-clip-text mb-3">{item.UperContent}</p>
+                      <p className=" font-joti text-transparent bg-gradient-to-r from-indigo-300 via-indigo-500 to-indigo-300 bg-clip-text font-bold mb-3">{item.HighlitedContent}</p>
+                      <p className=" font-frijole text-transparent bg-stone-400 bg-clip-text ">{item.DownContent}</p>
                     </div>
                   )}
                 </motion.div>

@@ -6,6 +6,23 @@ module.exports = {
   mode: 'jit',
   theme: {
     extend: {
+      fontFamily: {
+        bigshot: ['"Bigshot One"', 'cursive'],
+        dosis: ['Dosis', 'sans-serif'],
+        frijole: ['Frijole', 'cursive'],
+        joti: ['"Joti One"', 'cursive'],
+        libre: ['"Libre Baskerville"', 'serif'],
+        metal: ['"Metal Mania"', 'cursive'],
+        nosifer: ['Nosifer', 'cursive'],
+        orbitron: ['Orbitron', 'sans-serif'],
+        ribeye: ['Ribeye', 'cursive'],
+        rowdies: ['Rowdies', 'sans-serif'],
+        rubikDistressed: ['"Rubik Distressed"', 'cursive'],
+        rubikPuddles: ['"Rubik Puddles"', 'cursive'],
+        shafarik: ['Shafarik', 'cursive'],
+        tagesschrift: ['Tagesschrift', 'cursive'],
+        yuji: ['"Yuji Mai"', 'serif'],
+      },
       animation: {
         'up-down': 'upDown 3s ease-in-out infinite', 
       },

@@ -75,7 +75,7 @@ const Navbar = () => {
                 </div>
             {/* Custome Open Side bar button */}
             {/* Suggestion for sidebar links with fade up effect */}
-            <div className='relative flex flex-row items-center justify-end gap-5 ml-4 w-[153px] overflow-hidden h-[60px]'>
+            <div className='relative flex flex-row items-center justify-end gap-5 ml-4 w-[165px] overflow-hidden h-[60px]'>
               <AnimatePresence mode="wait">
                 <motion.div
                   key={suggestIdx}
@@ -86,7 +86,7 @@ const Navbar = () => {
                   className='absolute left-0 top-50 w-fit flex items-center px-3 py-1 min-h-[40px] overflow-hidden'
                   style={{ pointerEvents: 'auto' }}
                 >
-                  <span className='font-semibold text-purple-300'>{navLinks[suggestIdx].title} ?!</span>
+                  <span className=' text-indigo-300'>{navLinks[suggestIdx].title} ?!</span>
                 </motion.div>
               </AnimatePresence>
               <a href={navLinks[suggestIdx].id} className='ml-2 text-purple-400 w-[40px] h-[40px] rounded-full flex items-center justify-center p-2 border border-purple-400 underline underline-offset-2 hover:text-blue-400 transition-colors duration-300' >

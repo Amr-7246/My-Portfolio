@@ -1,60 +1,95 @@
+// & My Front-End Skills
 export const AboutDataForCompany = [
-  {
-  title: 'My Front-End World ',
-  UperContent: `You see, I didn’t just “learn” frontend . . I lived in it . .  
-From day one, I was diving deep . .  not just watching tutorials but building real stuff . .  
-Landing pages? Too easy . . E-commerce apps? Yup, done that . .  
-Next.js with TypeScript, React logic, Tailwind styling, clean folder structures . .  it's like muscle memory now . .  
-I even took the time to master state management, API integrations, responsive design, and dynamic components . .  
-Not to flex, but my code ain’t just working . .  it flows `,
-  HighlitedContent: `I don't just build UIs . . I build experiences that vibe with users `,
-  DownContent: `Being frontend dev isn’t just a title to me . . it’s where I craft, experiment, fail fast, and fly higher every time `,
-}
-,
-  {
-    title: 'About me !',
-    UperContent: `Ok . . Let’s just say it . .  I’m really passionate about what I’m working on . . 
-Although I Still a student at my college , But I had choosed my path on my own And that is the strongest proof of what I said abvoe . . 
-So what I’ll offer you as a company is simple : I’m ready to take on any task, even if I haven’t learned it before  I’ll learn it for real . . .`,
-    HighlitedContent: `And here is my side skills without my Front end skills . .  I actually can : 
-Use AI tools like cursor , Copilot on VS (vibe coding) , ChatGpt , Loveable , and So On 
-. . . Write simple unit tests but just simple ones (I’m not a pro yet)
-. . . Use GitHub actions for CI/CD (I’m not a pro yet)
-. . . See the full pictuer of software lifecycle like Backe end , DB , Testing stage , Security lears , DevOps (not just frontend)
-. . . Handle performance stuff (even without Next.js) like WebP , Lazy loading , code splitting , use lighthous and google dev tools , and so on 
+{
+  title: 'My Front-End Skills !! ',
+  UperContent: `
+  After I had learned the global perspective about the software cycle production, 
+  I finally chose the web application to focus on it and give it my time. And after
+  the widely learning for Backend with Node.js Express and Python 
+  with DB like MongoDB and SQL, some DevOps with tools like Docker . . 🐳 , AWS . . ☁️ , Vercel, GitHub . . 🐙, MongoDB Atlas and so on . .  
+  And when I started the frontend journey with RAW HTML & CSS, vanilla JavaScript, I found that I can be more efficient at the 
+  front-end field. And after gathering the global frontend concepts with these raw tools,
+  then I moved to the frameworks world and I started with Vue.js and collected some knowledge about Angular and `,
 
+  HighlitedContent: `
+  finally I chose React with TypeScript and integrated them with the performance power
+  and clean development environment of Next.js . .  ⚡  and used Tailwind CSS . .  💨 for fast/clean styling. 
+  And Framer Motion & GSAP for animation and Three.js for 3D handling, and REST & GraphQL APIs with Apollo Server and some 
+  performance techniques like lazy loading, WebKit code separation, and so on . . . 
+  and of course React libraries like React Query for clean APIs and Redux/Context API for state management and more and more . .`,
+
+  DownContent: `
+  . . However, all of these technologies are just tools,
+  But the most important thing that I had gained in my learning journey is the software engineer
+  mindset and the ability to learn fast and adapt to any new technology or framework that I serve our project . .`,
+}
+// & Side Skills !
+,
+{
+title: 'Side Skills ! . .  💡',
+UperContent: `
+  And with my frontend skills, I could gather some side skills to enhance my overall development capabilities and be more efficient at my work . . 
+  `,
+HighlitedContent: `
+  some skills like robust fullstack development with Node.js and Express,
+  Python, and even some DevOps with Docker . .  🐳, AWS . . ☁️, and CI/CD pipelines . .  
+  I can build simple unit tests and integration tests with Jest and React Testing Library,
+  I can use AI tools like GitHub Copilot . . 🤖, Cursor (VIP coding), ChatGPT . .  💬, Lovable AI and so on . .
+  I learned some about design patterns e.g., Singleton, Factory, Observer and data structure & algorithms like Arrays, Linked Lists, Binary Search, DFS, BFS  
+  Even took a short journey into mobile dev with Flutter . .  🐦,
 `,
-    DownContent: `So yeah . . You can count on me to commit, learn fast, and get stuff done for real`,
-  },
+DownContent: `
+  And yes, these skills are not mature in my mind but I took what I need to see the big picture of software and I can expand with it anytime if required`,
+},
+// & About me !
+,
+{
+title: 'About me !',
+UperContent: `
+  Ok . . Let’s just say it . .  I’m really passionate about what I’m working on . . 
+  Although I’m still a student at my college, but I had chosen my path on my own and that is the strongest proof of what I said . . 
+  So what I see that I can do is simple : I’m ready to take on any task, even if I haven’t learned it before  I’ll learn it for real . . .`,
+HighlitedContent: ``,
+DownContent: `
+  So yeah . . You can count on me to commit, learn fast, and get stuff done for real`,
+},
+// & What I have done !
   {
-    title: 'What I have done !',
-    UperContent: `Actually, I’ve built a real projects like . . 
-                  an Applcation that collect some of my skills (microservices) . .
-                  My Portfolio site (this one) . .
-                  some front end layouts css and littel JS To just show my responsive layout skills . .
-                  E-Commerce App (almost 95% done, you can check it out on my site) . . .`,
-    HighlitedContent: `My goal was to stimulation a work tasks at my projects mix my frontend powers with AI magic to match this new era of dev `,
-    DownContent: `I care about building projects with meaning, not just code . . And I'm always pushing forward `,
+    title: 'What I have done  !?  🚀',
+    UperContent: `
+      Actually, I’ve built real projects like . . 
+      an application that collects some of my skills ( microservices ) . . 
+      my Portfolio site ( this one ) . . 
+      some front-end layouts using CSS and little JS to just show my responsive layout skills . . 
+      E-Commerce App ( almost 95% done, you can check it out on my site ) . . .`,
+    HighlitedContent: `My goal was to simulate work tasks in my projects, mixing my frontend powers with AI magic to match this new era of dev`,
+    DownContent: `I care about building projects with meaning, not just code . . And I'm always pushing forward`,
   },
+// & Why you select me !?
   {
-    title: 'Why you select me !?',
-    UperContent: `Still a student, still learning  but I’ve already done more than just follow tutorials . .
-I took the solo path with full heart and commitment . . and it shows 
-Whether it's code, testing, performance, or even AI  I'm there, learning it and doing it . .`,
-    HighlitedContent: `I don’t wait for permission to learn  I jump into it head first `,
-    DownContent: `If you’re looking for someone who’ll grow fast and build with passion . . that’s me `,
+    title: 'Why you select me !? ',
+    UperContent: `
+      Still a student, still learning, but I’ve already done more than just follow tutorials . . 
+      But my self-learning manner tells you that I can do it . . My manner was that I mixed between theoretical
+      knowledge with practical knowledge so you can observe that in my projects that I have built when I was learning . .`,
+    HighlitedContent: `
+    I don’t wait for permission to learn. I jump into it head first`,
+    DownContent: `
+    If you’re looking for someone who’ll grow fast and build with passion . . that’s me`,
   },
+// & What I tend to do at the next steps!
   {
-  title: 'Coming soon! What I tend to do at the next steps!',
+  title: 'Coming soon! . . What I tend to do at the next steps !? ',
   UperContent: `The future? Already planning for it . . 
-I’m diving deeper into the new age of programming . . I’m diving deeper into the AI agents development with 
-its new frameworks like LangChain, LlamaIndex, and so on . .
+I’m diving deeper into the new age of programming . . I’m diving deeper into AI agents development with 
+its new frameworks like LangChain , LlamaIndex , and so on . .
 those tools that release the AI power from its cage and make it available for anyone, 
-And giving them access to anything, literally anything . . With that magic fresh technology, I can raise my skills at building a full-stack based on AI powers . . Isn’t that cool enough?`,
+and giving them access to anything, literally anything . . With that magic fresh technology, I can raise my skills at building a full-stack based on AI powers . . Isn’t that cool enough?`,
   HighlitedContent: `I wanna be that dev who builds fast, smart, and scalable all at once`,
-  DownContent: `Let’s just say . . I’m not just looking for a job  I’m looking to level up with every line of code`,
+  DownContent: `Let’s just say . . I’m not just looking for a job, I’m looking to level up with every line of code`,
 }
 ];
+
 
 export const AboutDataForClient = [
   {

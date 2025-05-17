@@ -6,7 +6,7 @@ import AppRoutes from './Routes/AppRoutes';
 const App = () => {
   return (
     <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true, }} >
-      <div className="relative z-0  bg-primary ">
+      <div className="relative z-0 font-rubikDistressed bg-primary ">
         <Navbar />
         <AppRoutes/>
       </div>
