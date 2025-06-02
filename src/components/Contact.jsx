@@ -4,7 +4,7 @@ import emailjs from "@emailjs/browser";
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
-import { contact } from '../constants';
+import { contact } from '../Data/OtherData';
 import { slideIn } from "../utils/motion";
 import { FiCopy, FiCheck } from "react-icons/fi";
 import "../index.css";

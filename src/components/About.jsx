@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Tilt } from 'react-tilt';
-import { services } from '../constants';
+import { services } from '../Data/Techs';
 import { SectionWrapper } from '../hoc';
-import { styles } from '../styles';
 import { fadeIn, textVariant } from '../utils/motion';
-import { AboutDataForCompany, AboutDataForClient } from './AbotData';
+import { AboutDataForCompany, AboutDataForClient } from '../Data/AboutData';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 
 const ServiceCard = ({ index, title, icon }) => (
@@ -27,7 +26,7 @@ const ServiceCard = ({ index, title, icon }) => (
 );
 
 const About = () => {
-  const [WhoAreThere, setWhoAreThere] = useState('');
+  const [WhoAreThere, setWhoAreThere] = useState('client');
   const [openTab, setOpenTab] = useState(null);
   const btn = 'bg-purple-600/20 w-full text-indigo-700 font-black duration-700 p-3 cursor-pointer hover:bg-transparent hover:border-indigo-700 border border-transparent rounded-lg';
 
@@ -50,11 +49,11 @@ const About = () => {
         </div>
         {/* Tabs Section */}
         {WhoAreThere ? (
-          <div className="w-full max-w-3xl mx-auto mt-8 rounded-2xl overflow-hidden shadow-lg bg-gradient-to-br from-black/60 via-purple-900/20 to-black/60 backdrop-blur-lg">
+          <div className="w-full mx-auto mt-8 rounded-lg overflow-hidden shadow-lg bg-gradient-to-br from-black/60 via-purple-900/20 to-black/60 backdrop-blur-lg">
             {aboutData.map((item, idx) => (
               <div key={idx}>
                 <div className={`flex items-center justify-between px-6 py-4 cursor-pointer transition-all duration-300 select-none ${openTab === idx ? 'bg-gradient-to-r from-purple-900/30 to-indigo-900/20 text-purple-400 shadow-inner scale-[1.01]' : 'hover:bg-purple-900/10 text-stone-400'} font-bold text-lg`} onClick={() => handleTabClick(idx)} >
-                  <span className=' tracking-widest font-rubikPuddles text-transparent bg-gradient-to-r from-sky-400 via-indigo-500 to-purple-500 bg-clip-text '>{item.title}</span>
+                  <span className=' tracking-widest text-transparent bg-gradient-to-r from-indigo-700 via-sky-500 to-purple-700 bg-clip-text '>{item.title}</span>
                   <span className="ml-2 text-xl transition-transform duration-300">
                     {openTab === idx ? <FaChevronUp /> : <FaChevronDown />}
                   </span>

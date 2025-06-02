@@ -1,7 +1,7 @@
 import React from "react";
 import { BallCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
-import { technologies } from "../constants";
+import { technologies } from "../Data/Techs";
 
 const renderTechnologies = () => {
   return technologies.map(({ name, icon }) => (

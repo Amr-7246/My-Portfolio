@@ -11,20 +11,20 @@ const Hero = () => {
     <section className="relative overflow-hidden w-full h-screen mx-auto">
       {/* Top Section */}
         <div className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}>
-          <div className="flex flex-col justify-center items-center mt-5">
+          <div className="flex flex-col justify-center items-center mt-[40px]">
             <div className="w-5 h-5 rounded-full bg-[#915EFF]" />
-            <div className="w-1 sm:h-80 h-40 violet-gradient" />
+            <div className="w-1 sm:h-120 h-80 violet-gradient" />
           </div>
 
-          <div className="">
+          <div className="pt-[50px]">
             <h1 className={`${styles.heroHeadText} !font-rubikPuddles text-white`}>
               Hi, I'm <span className="text-[#915EFF]">Amr</span>
             </h1>
             <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-              I do
+              I am
               <Typewriter
                 options={{
-                  strings: ["frontEnd Development", "bulding modern websites", "using modern technique"],
+                  strings: [ " a fullStack software developer ", " working as a freelancer " , "a web frontEnd specialized " ],
                   autoStart: true,
                   loop: true,
                   loopCount: Infinity,
@@ -67,7 +67,7 @@ const Hero = () => {
         </div>
       {/* Animated Button for about */}
       {/* Animated Element */}
-      <div className="absolute xs:bottom-[20%] rounded-xl lg:left-[60%] md:left-[55%] left-[20%] md:bottom-[40%] bottom-[30%] w-fit flex justify-center items-center">
+      <div className="absolute w-fit xs:bottom-[20%] rounded-xl lg:left-[60%] md:left-[55%] left-[20%] md:bottom-[40%] bottom-[30%] flex justify-center items-center">
         <DotLottieReact
           src="/Animation/Animation - 1746586967737.lottie"
           loop

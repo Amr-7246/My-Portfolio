@@ -55,6 +55,7 @@ import bgPhoto7 from "./Customize/photo_2025-02-27_13-52-02.jpg"
 import bgPhoto8 from "./Customize/photo_2025-02-27_14-15-20.jpg"
 import bgPhoto9 from "./Customize/photo_2025-04-04_04-53-14.png"
 import bgPhoto10 from "./Customize/photo_2_2025-05-01_06-41-12.jpg"
+import Formsbg from "./Customize/photo_3_2025-05-29_13-16-03.jpg"
 // ********** navBar
 // ********** experiens
 import icon1 from "./Customize/brainwave-symbol.svg"
@@ -75,31 +76,9 @@ import gmail from "./Customize/photo_10_2025-01-11_23-36-58.jpg"
 // ********** conact
 
 export {
-  Amr,
-  bgNav,
-  bgNav2,
-  bgNav3,
-  navList,
-  navList2,
-  bgPhoto,
-  bgPhoto2,
-  bgPhoto3,
-  bgPhoto4,
-  bgPhoto5,
-  bgPhoto6,
-  bgPhoto7,
-  bgPhoto8,
-  bgPhoto9,
-  bgPhoto10,
-  icon1,
-  icon2,
-  icon3,
-  icon4,
-  icon5,
-  icon6,
-  icon7,
-  icon8,
-  icon9,
+  Amr, bgNav, bgNav2, bgNav3, navList, navList2,
+  bgPhoto, bgPhoto2, bgPhoto3, bgPhoto4, bgPhoto5, bgPhoto6, bgPhoto7, bgPhoto8, bgPhoto9, bgPhoto10,Formsbg ,
+  icon1, icon2, icon3, icon4, icon5, icon6, icon7, icon8, icon9,
   vite,
   gitHub,
   faceBook,
@@ -108,21 +87,7 @@ export {
   // *********
   mathwork,
   edunet,
-  python,
-  c,
-  cpp,
-  java,
-  github,
-  css,
-  git,
-  html,
-  javascript,
-  Typescript,
-  Next,
-  nodejs,
-  reactjs,
-  tailwind,
-  threejs,
+  python, c, cpp, java, github, css, git, html, javascript, Typescript, Next, nodejs, reactjs, tailwind, threejs,
   weatherpedia,
   termpw,
   payloadmaster,

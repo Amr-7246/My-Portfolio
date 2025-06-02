@@ -3,7 +3,7 @@ import "react-vertical-timeline-component/style.min.css";
 import { VerticalTimeline , VerticalTimelineElement } from "react-vertical-timeline-component";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { experiences } from "../constants";
+import { experiences } from "../Data/ProjectsData";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 import { FiExternalLink } from "react-icons/fi";

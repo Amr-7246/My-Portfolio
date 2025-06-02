@@ -10,7 +10,7 @@ setTimeout(() => {
     preloader.style.transition = 'opacity 0.5s ease';
     setTimeout(() => preloader.remove(), 500);
   }
-}, 4000);
+}, 2000);
 
 const rootElement = document.getElementById('root');
 const root = ReactDOM.createRoot(rootElement);
